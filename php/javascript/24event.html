@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="SHIFT-JIS" />
+        <title>JavaScriptの練習</title>
+    </head>
+    <body>
+        <h1>JavaScriptの練習</h1>
+        <input type="button" id="myButton" value="クリック！！" />
+        <script>
+            // document object model（DOM） - Event
+            var e = document.getElementById('myButton');
+            e.onclick = function a() {
+                alert('Clicked!');
+            }
+        </script>
+    </body>
+</html>

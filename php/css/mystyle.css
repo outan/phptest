@@ -1,0 +1,42 @@
+
+h1{
+    color: blue;
+	
+}
+
+#nihao{
+  color: red;
+}
+
+.aisatu{
+color: green;
+font-size: 20px;
+font-weight: bold;
+text-align: left;
+
+line-height: 20px;
+text-decoration: line-through underline;
+font-style:italic;
+}
+
+body{
+background-color: red;
+background-image: url('book.jpg');
+background-repeat: no-repeat;
+background-position: top center;
+background-attachment: fixed;
+}
+
+#box1{
+background-color: green;
+height: 50px;
+width: 40%;
+
+border-color: yellow;
+border-width: 5px;
+border-style: solid;
+border: outset
+
+padding: 10px 10px 10px;
+margin: 20px;
+}

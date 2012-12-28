@@ -1,0 +1,18 @@
+#RewriteEngine on
+#RewriteCond %{HTTPS} off
+#RewriteRule ^(*)$ https://%{HTTP_HOST}%{REQUEST_URI} [R,L] 
+
+#RewriteEngine On 
+#RewriteCond %{SERVER_PORT} ^443$ 
+#RewriteRule /httphttps/httphttps.html https://%{HTTP_HOST}%{REQUEST_URI} [R,L]
+
+RewriteEngine On 
+RedirectMatch /hnv/index.htm http://fnx-cs.dweblink.jp/ 
+RedirectMatch /hnv/info/bs/index.htm http://fnx-cs.dweblink.jp/news/ 
+RedirectMatch /hnv/info/bs/index2.htm http://fnx-cs.dweblink.jp/maintenance/
+
+#https http
+RewriteEngine on
+RewriteCond %{HTTPS} on
+RewriteRule ^(.*)$ http://%{HTTP_HOST}%{REQUEST_URI} [R,L]
+

@@ -1,0 +1,20 @@
+#RewriteEngine On
+#RewriteCond %{HTTP_HOST} ^(nexway\.co\.jp)(:80)? [NC]
+#RewriteRule .* http://www.nexway.co.jp%{REQUEST_URI} [L,R=301]
+
+#http https
+#RewriteEngine on
+#RewriteCond %{HTTPS} off
+#RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [R,L]
+
+
+#http https only thanks.html
+RewriteEngine on
+
+RewriteCond %{REQUEST_URI} .*/thanks.html$
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [R,L]
+
+RewriteCond %{REQUEST_URI} !(.*/thanks.html$)
+RewriteCond %{HTTPS} on
+RewriteRule ^(.*)$ http://%{HTTP_HOST}%{REQUEST_URI} [R,L]

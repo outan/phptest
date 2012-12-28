@@ -1,0 +1,22 @@
+
+
+#header {
+    background-color: red;
+}
+
+#main {
+    background-color: blue;
+    float: left;
+    width: 300px;
+}
+
+#sidebar {
+    background-color: yellow;
+    float: right;
+    width: 150px;
+}
+
+#footer {
+    background-color: green;
+    clear: right;
+}
